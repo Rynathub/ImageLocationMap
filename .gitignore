@@ -16,6 +16,8 @@ xcshareddata/
 *.xccheckout
 *.xcscheme
 *.xcscmblueprint
+*.xcscmblueprint
+*.xcschememanagement
 
 # Xcode Derived Data & Build Files
 DerivedData/
