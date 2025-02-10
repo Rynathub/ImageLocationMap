@@ -18,6 +18,11 @@ class UserLocationManager:NSObject, CLLocationManagerDelegate {
         super.init()
         locationManager = CLLocationManager()
         locationManager?.delegate = self
+        locationManager?.distanceFilter = 10
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         
+    }
+    func requestLocationPermission() {
+        locationManager?.requestWhenInUseAuthorization()
     }
 }
