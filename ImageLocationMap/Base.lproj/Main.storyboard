@@ -37,24 +37,44 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxT-Uc-Enr">
+                                <rect key="frame" x="185" y="197" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="03w-NF-bGc"/>
+                                    <constraint firstAttribute="width" constant="50" id="Nli-ye-aIV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="location.fill" catalog="system"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="updateLocationButtonTapped:" destination="kQ9-gO-1fs" eventType="touchUpInside" id="ssI-oB-2Ny"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZTX-xu-k4z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="k6z-6o-Oct" firstAttribute="top" secondItem="NxT-Uc-Enr" secondAttribute="bottom" constant="-144" id="Vmv-wF-64t"/>
                             <constraint firstItem="ZTX-xu-k4z" firstAttribute="trailing" secondItem="k6z-6o-Oct" secondAttribute="trailing" id="ddg-dH-uEw"/>
                             <constraint firstItem="k6z-6o-Oct" firstAttribute="leading" secondItem="ZTX-xu-k4z" secondAttribute="leading" id="fj9-jp-vJc"/>
                             <constraint firstItem="ZTX-xu-k4z" firstAttribute="bottom" secondItem="k6z-6o-Oct" secondAttribute="bottom" id="hPe-Ij-0id"/>
                             <constraint firstItem="k6z-6o-Oct" firstAttribute="top" secondItem="ZTX-xu-k4z" secondAttribute="top" id="oxw-Ed-Meb"/>
+                            <constraint firstItem="NxT-Uc-Enr" firstAttribute="leading" secondItem="k6z-6o-Oct" secondAttribute="trailing" constant="-208" id="xat-Ny-Ghr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zGw-PG-c5g"/>
+                    <connections>
+                        <outlet property="mapView" destination="k6z-6o-Oct" id="kpY-Zq-oko"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jf2-lG-w54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="-63"/>
+            <point key="canvasLocation" x="-295.41984732824426" y="-63.380281690140848"/>
         </scene>
     </scenes>
     <resources>
+        <image name="location.fill" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
