@@ -19,7 +19,7 @@ class MapService {
         annotation.title = title
         mapView.addAnnotation(annotation)
         
-        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         mapView.setRegion(region, animated: true)
     }
 }
